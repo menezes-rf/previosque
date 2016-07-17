@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"icons": {
+		 "16": "img/icon-16.png",
+		 "48": "img/icon-48.png",
+		"128": "img/icon-128.png"
+	},
+	"name": "Previosque",
+	"description": "Adiciona ao Quiosque Alunos, da UFRRJ, opção para visualizar os arquivos publicados direto no navegador.",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": ["http://academico.ufrrj.br/quiosque/aluno/*"],
+			     "js": ["js/previosque-check.js"],
+			 "run_at": "document_end"
+		}
+	],
+	"browser_action": {
+		"default_title": "Previosque",
+		"default_popup": "html/about.html"
+	},
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"permissions": [
+		"management", "tabs",
+		"http://academico.ufrrj.br/quiosque/aluno/*"
+	]
+}

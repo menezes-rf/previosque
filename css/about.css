@@ -1,0 +1,49 @@
+/** PREVIOSQUE
+ *  about.css
+ *
+ *  Autor: Rodrigo Menezes
+ *         rodrigo@rapidlight.io
+ *
+ *  Inclui estilos para a página de boas-vindas e sobre da extensão.
+ */
+
+ body {
+	background:rgb(57,30,68);
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin:0;
+	height:100vh;
+	color:rgb(255,255,255);
+	-webkit-user-select:none;
+	cursor:default;
+	font-size:1rem;
+}
+.content {
+	flex:0 0 auto;
+	max-width:470px;
+	min-width:380px;
+	padding:2em;
+	text-align:center;
+}
+.logo i {
+	font-size:4em;
+	color:rgba(0,0,0,.2);
+}
+h1 {
+	font-weight:300;
+	margin:.5em 0;
+}
+p {
+}
+p.tip {
+	color:rgba(255,255,255,.6);
+	font-size:.9em;
+}
+a {
+	text-decoration:none;
+	color:rgb(255,255,255);
+	border-bottom:dotted 1px rgb(255,255,255);
+}
