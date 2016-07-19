@@ -46,9 +46,6 @@ function createPreviosqueUI() {
 
 	container.classList.add('content-container');
 
-	console.log(progress);
-	console.log(container);
-
 	document.body.appendChild(progress);
 	progress.appendChild(container);
 
@@ -58,16 +55,12 @@ function createPreviosqueUI() {
 		div = document.createElement('div');
 		div.classList.add(classes[i]);
 		container.appendChild(div);
-		console.log(classes[i]);
 	}
 
 	var indicator = document.createElement('div');
 	indicator.classList.add('indicator');
 
-	console.log(indicator);
-
 	var bar = document.querySelector('#previosque-progress .bar');
-	console.log(bar);
 	bar.appendChild(indicator);
 
 	var a, filename, button;
